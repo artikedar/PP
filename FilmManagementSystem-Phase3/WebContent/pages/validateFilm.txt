@@ -1,0 +1,76 @@
+function titleValidation(){
+	var filmName=createfilm.filmTilte.value;
+	var letters = /^[A-Za-z]+$/;
+	if(filmName.match(letters)){
+		document.getElementById("titleErr").innerHTML="";
+		return true;
+	}
+	else{
+		document.getElementById("titleErr").innerHTML="Please Enter a Title Starting with an Alphabet";
+		filmName.focus();
+		return false;
+		
+	}
+}
+
+function rentalDurationValidation(){
+	
+}
+
+function lengthValidation(){
+	
+}
+
+function rentalDurationValidation(){
+	
+}
+
+
+
+
+/*
+ function titleValidation()  
+{   
+		var filmname=film.filmname.value;
+		var letters = /^[A-Za-z]+$/;  
+	
+		if(filmname.match(letters))  
+		{  
+			document.getElementById("titleerr").innerHTML="";
+			return true;  
+		}  
+		else  
+		{  
+			document.getElementById("titleerr").innerHTML="*Please enter Title starts with alphabet"; 
+			filmname.focus();  
+			return false;  
+		}  
+} 
+
+function lengthValidation(){
+	
+	var filmlength=film.length.value;
+	
+	if(filmlength>=1||filmlength<=1000){
+		document.getElementById("lengtherr").innerHTML="";
+		return true;
+	}
+	else
+		{
+		document.getElementById("lengtherr").innerHTML="*Please enter length between 1 to 1000";
+		lengtherr.focus();
+		return false;
+		}
+}
+
+function ratingValidation(){
+	
+	var ratings=film.rating.value;
+	if(ratings>=1||ratings<=5)
+		return true;
+	else 
+		return false;
+	
+	
+}
+ */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="../css/MyStyle.css">
+<script type="text/javascript" src="../script/validate.js"></script>
+
+</head>
+<body>
+<div class="color">
+<h1><i>Welcome to Film management System!!!</i></h1>
+</div>
+<div align="center">
+<img src="http://www.eventprophire.com/_images/categories/headers/bollywood_event_prop_hire.jpg">
+</div>
+<div align="center">
+<h2>Please Enter Login Details</h2>
+</div>
+<div align="center">
+<form method="post" name="loginform" onsubmit="return loginvalidation()" action="home.html">
+	<table>
+		<tr>
+			<td>UserName:</td>
+			<td><input type="text" name="uname">
+			<div id="unameErr" class="errMsg"></div></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="password" name="upwd">
+			<div id="upwdErr" class="errMsg"></div></td>
+		</tr>
+		</br>
+		<tr> 
+			<td><input type="submit" value="login" class="style"></td>
+			<td><input type="reset" value="clear" class="style"></td>
+		</tr>
+	</table>
+	</form>
+</div>
+
+</body>
+</html>

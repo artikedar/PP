@@ -1,0 +1,49 @@
+@CHARSET "ISO-8859-1";
+.menu{
+	width: 1260px;
+    height: 25px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+   	color: white;
+   	text-align: left;  
+    text-decoration: none;  
+    background-color: black;
+        
+}
+
+.format{
+	text-decoration: none; 
+	color: white;
+	vertical-align: middle;
+	margin-left: 3%;
+	
+}
+
+.color{
+	width: 1260px;
+    height: 50px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+   	color: black;
+   	text-align: center;  
+    text-decoration: none;  
+    background-color: #00ffff;
+	
+}
+
+.background{
+	background-color: #00ffff;
+}
+
+
+.errMsg{
+	
+	color: red;
+	font-size: 14px;
+	font-weight: bold;
+}
+	
+}
+

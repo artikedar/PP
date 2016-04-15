@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create Film</title>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src="../script/validateFilm.js"></script>
+<link type="text/css" rel="stylesheet" href="../css/MyStyle.css">
+<script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
+  
+<script>
+  $(function() {
+    $( "#datepicker1" ).datepicker();
+  });
+  </script>
+
+<script>
+$(document).ready(function() {
+    $("#start_datepicker").datepicker();
+$("#end_datepicker").datepicker();
+
+})  ;
+</script>
+ 
+
+</head>
+<body>
+<form method="post" action="" name="createfilm">
+	<table>
+		<h3>Create New Film</h3> 
+			<tr>
+				<td>Title</td>
+				<td><input type="text" name="filmTilte" onmouseout="return titleValidation();">
+				<div id="titleErr" class="errMsg"></div></td>
+			</tr>
+			
+			<tr>
+				<td>Description</td>
+				<td><input type="text" name="descrp"></td>
+			</tr>
+			
+			<tr>
+				<td>Release Year</td>
+				<td><input type="text" name="relDate" id="datepicker1" onmouseout="return releaseYearValidation();">
+				<div id="relYearErr" class="errMsg"></div></td>
+			</tr>
+			
+			<tr>
+				<td>Rental Duration</td>
+				<td><input type="text" name="relDate" id="datepicker" onmouseout="return rentalDurationValidation();">
+				<div id="renDurErr" class="errMsg"></div></td>
+			</tr>
+				
+			<tr>
+				<td>Rating</td>
+				<td><select>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select></td>				
+			</tr>
+			
+			<tr>
+				<td>Category</td>
+				<td><select>
+					<option value="Horror">Horror</option>
+					<option value="Action">Action</option>
+					<option value="Drama">Drama</option>
+					<option value="Comedy">Comedy</option>
+					<option value="Romance">Romance</option>
+					<option value="BioPic">BioPic</option>
+					<option value="Documentary">Documentary</option>
+				</select></td>
+			</tr>
+			
+			
+			<tr>
+				<td>Special Features</td>
+				<td><input type="text" name="decrp" onmouseout="return specialFeaturesValidation();">
+				<div id="specialFeaturesErr" class="errMsg"></div></td>
+			</tr>
+			
+			<tr>
+				<td>Length</td>
+				<td><input type="text" name="length" onmouseout="return lengthValidation();">
+				<div id="lengthErr" class="errMsg"></div></td>
+			</tr>
+			
+			<tr>
+				<td>Original Language</td>
+				<td><select>
+					<option value="Hindi">Hindi</option>
+					<option value="English">English</option>
+					<option value="Marathi">Marathi</option>
+					<option value="Tamil">Tamil</option>
+					<option value="Telegu">Telegu</option>
+					<option value="Gujarati">Gujarati</option>
+				</select></td>
+			</tr>
+			
+			<tr>
+				<td>Other Languages</td>
+				<td><input type="checkbox" value="Hindi">Hindi
+				<input type="checkbox" value="English">English
+				<input type="checkbox" value="Marathi">Marathi
+				<input type="checkbox" value="Tamil">Tamil
+				<input type="checkbox" value="Telegu">Telegu
+				<input type="checkbox" value="Gujarati">Gujarati</td>
+			</tr>
+			
+			<tr>
+				<td>Replacement Cost:</td>
+				<td> <input type="text" name="cost" onmouseout="return replacementCostValidation();">
+				<div id="repCostErr" class="errMsg"></div></td>
+			</tr>
+			
+			<tr>
+				<td>Actors</td>
+				<td><select multiple>
+					<optgroup label="Hero">
+						<option>ShahRukh Khan</option>
+						<option>Amir Khan</option>
+						<option>Amitabh Bacchan</option>
+						<option>Salman Khan</option>
+						<option>Saif Ali Khan</option>
+						<option>Akshay Kumar</option>						
+					</optgroup>
+					<optgroup label="Heroine">
+						<option>Priyanka Chopra</option>
+						<option>Deepika Padikone</option>
+						<option>Katrina Kaif</option>
+						<option>Shraddha Kapoor</option>
+						<option>Alia Bhat</option>
+						<option>Kareena Kapoor</option>						
+					</optgroup>
+				</select></td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" value="Save">
+					<input type="reset" value="Clear">
+		 		</td>
+		 		
+			</tr>
+
+
+	</table>
+</form>
+</body>
+</html>
